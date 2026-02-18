@@ -1,7 +1,7 @@
-package com.subho.Job_APP2.Service;
+package com.abhi.Job_APP2.Service;
 
-import com.subho.Job_APP2.Repo.jobrepo;
-import com.subho.Job_APP2.model.JobPost;
+import com.abhi.Job_APP2.Repo.jobrepo;
+import com.abhi.Job_APP2.model.JobPost;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
