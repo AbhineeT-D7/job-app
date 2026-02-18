@@ -13,7 +13,7 @@ public class PerformanceMonitorAspect {
 
 	public static final Logger LOGGER = LoggerFactory.getLogger(PerformanceMonitorAspect.class);
 
-	@Around("execution(* com.subho.Job_APP2.Service.jobservice.*(..))")
+	@Around("execution(* com.abhi.Job_APP2.Service.jobservice.*(..))")
 	public Object monitorExecutionTime(ProceedingJoinPoint jp) throws Throwable {
 		long start = System.currentTimeMillis();
 		Object result = jp.proceed();
