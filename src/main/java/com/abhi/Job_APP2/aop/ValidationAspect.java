@@ -13,7 +13,7 @@ public class ValidationAspect {
 
 	public static final Logger LOGGER = LoggerFactory.getLogger(ValidationAspect.class);
 
-	@Around("execution(* com.subho.Job_APP2.Service.jobservice.getonejob(..)) && args(postId)")
+	@Around("execution(* com.abhi.Job_APP2.Service.jobservice.getonejob(..)) && args(postId)")
 	public Object validateAndUpdate(ProceedingJoinPoint jp, int postId) throws Throwable {
 		if (postId < 0) {
 			LOGGER.info("PostId is negative, converting to positive...");
